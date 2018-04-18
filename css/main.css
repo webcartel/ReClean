@@ -1,0 +1,187 @@
+.wcst_clearfix:before, .wcst_clearfix:after {
+  content: "";
+  display: table;
+}
+.wcst_clearfix:after {
+  clear: both;
+}
+.wcst_clearfix {
+  zoom: 1;
+}
+
+.wcst_revicleaner {
+	margin: -10px -10px 15px -10px;
+	padding: 15px;
+	text-align: center;
+	background-color: #fff;
+}
+.wcst_revicleaner h4 {
+	margin: 0;
+	padding: 0 15px;
+	font-size: 16px;
+	color: #0085BA;
+	text-align: center;
+	background-color: #fff;
+}
+.wcst_revicleaner button {
+	background-color: #0085ba;
+	border: 0;
+	border-radius: 4px;
+	border-color: #0073aa #006799 #006799;
+	box-shadow: 0 1px 0 #006799;
+	display: inline-block;
+	color: #fff;
+	text-shadow: 0 -1px 1px #006799,1px 0 1px #006799,0 1px 1px #006799,-1px 0 1px #006799;
+    text-decoration: none;
+    text-align: center;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 12px 2px;
+	cursor: pointer;
+}
+.wcst_revicleaner button:hover {
+	background-color: #008EC2;
+}
+
+.wcst_revicleaner_pannel {
+	margin-top: 20px;
+	background-color: #fff;
+}
+.wcst_revicleaner_sub_pannel {
+	float: left;
+	padding: 15px;
+	width: 50%;
+	box-sizing: border-box;
+}
+.wcst_revicleaner_pannel table {
+	margin-bottom: 25px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.wcst_revicleaner_pannel table:last-child {
+	margin-bottom: 0;
+}
+.wcst_revicleaner_pannel table tr {
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #fff;
+}
+.wcst_revicleaner_pannel table .clear {
+	background-color: #eee;
+}
+.wcst_revicleaner_pannel table tr:first-child {
+	background-color: #EAEAEA;
+}
+.wcst_revicleaner_pannel table tr:first-child:hover {
+	background-color: #EAEAEA;
+}
+.wcst_revicleaner_pannel table tr:hover {
+	background-color: #F4F4F4;
+}
+.wcst_revicleaner_pannel table td {
+	padding: 10px 15px;
+}
+.wcst_revicleaner_pannel table td a {
+	text-decoration: none;
+}
+.wcst_revicleaner_pannel table td button {
+	display: inline-block;
+	margin: -5px 0 -5px 0;
+	padding: 4px 20px 6px 20px;
+	background-color: #0073AA;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+.wcst_revicleaner_pannel table td button:hover {
+	background-color: #0087C7;
+}
+.wcst_revicleaner_pannel .green {
+	color: #5B7F00;
+}
+.wcst_revicleaner_pannel .red {
+	color: #FF0000;
+}
+.wcst_green_checkmark {
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background: url(../images/green-checkmark.png) 0 0 no-repeat;
+	vertical-align: middle;
+}
+
+
+
+/* ------------------------------------------ */
+/* Загрузчик 1 */
+.wcst_loader_w {
+	position: relative;
+	margin: 0 auto 0 auto;
+	max-width: 200px;
+	height: 5px;
+	border: 1px solid #008ED1;
+	background-color: #fff;
+	overflow: hidden;
+}
+.wcst_loader {
+	position: absolute;
+	top: 0px;
+	left: -10%;
+	height: 5px;
+	width: 10%;
+	background-color: #008ED1;
+	animation: loader 0.8s infinite linear;
+}
+@keyframes loader {
+	0% {
+		left: -10%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+/* Загрузчик 2 */
+.wcst_loader_2 {
+	position: relative;
+	margin: 0 auto 0 auto;
+	max-width: 200px;
+	height: 10px;
+	border: 0;
+	background-color: transparent;
+	overflow: hidden;
+}
+.wcst_loader_2_b1, .wcst_loader_2_b2, .wcst_loader_2_b3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 10px;
+	width: 10px;
+	background-color: #CDDC39;
+	border-radius: 50%;
+	opacity: 0;
+}
+.wcst_loader_2_b1 {
+	animation: wcst_loader_2 1.5s ease-in-out infinite;
+}
+.wcst_loader_2_b2 {
+	animation: wcst_loader_2 1.5s ease-in-out 0.3s infinite;
+}
+.wcst_loader_2_b3 {
+	animation: wcst_loader_2 1.5s ease-in-out 0.6s infinite;
+}
+@keyframes wcst_loader_2 {
+	0% {
+		opacity: 0;
+		left: 0%;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0;
+		left: calc(100% - 10px);
+	}
+}
